@@ -1,0 +1,16 @@
+﻿@model ProfileViewModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <p><strong>Username:</strong> @Model.UserName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Role:</strong> @Model.Role</p>
+
+    <a href="@Url.Action("Edit")" class="btn btn-primary">Edit Profile</a>
+    <a href="@Url.Action("Delete")" class="btn btn-danger">Delete User</a>
+</div>
